@@ -15,30 +15,126 @@ border-bottom: solid grey 2px;
 #biography {
 
 flex-direction: column;
-color: hotpink;
+/* color: hotpink;
 font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-flex-grow: 1;
+flex-grow: 1; */
 
+}
 
-
+#contact {
+    padding-top: 20px;
+    font: 20px;
 }
 
 #name{
-    font: 40px;
-    color: blue;
+font: 20px;
+color: black;
 }
 #title{
     font: 100px;
-    color: pink
+    color:black;
 
 }
 #paragraph{
     font: 10px;
-
+    color : black;
 
 }
 #main-2 {
 display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+}
+
+
+#second-group{
+    display: flex;
+    flex-direction: row;  
+
+
+
+}
+/* #first-group{
+
+display: flex;
 flex-direction: row;
-justify-content: space-between;
+} */
+
+
+@media (max-width :500px){
+#portfolio{
+    flex-direction: column;
+}
+#main-1 {
+    flex-direction: column;
+    border-bottom: solid grey 2px;
+}
+#main-2 {
+    flex-direction: column;
+    
+}
+#center1 {
+    border-bottom: solid grey 2px;
+}
+#center2 {
+    border-bottom: solid grey 2px;
+}
+#center-3 {
+    border-bottom: solid grey 2px;
+}
+#first-group {
+    flex-direction: column;
+    border-bottom: solid grey 2px;
+}
+#second-group {
+    flex-direction: column;
+}
+}
+
+@media (min-width :500px)and (max-width: 1024px){
+#portfolio{
+width: 100%;
+height: 100%;
+
+}
+#main-1 {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+
+    }
+
+#main-2 {
+    width: 100%;
+    height: 100%;
+
+}
+#hobbies {
+    width: 33%;
+}
+#center-3 {
+    width: 33%;
+    /* border-right: grey solid 1px; */
+    justify-content: center;
+}
+#center2 {
+    width: 33%;
+    /* border-right: grey solid 1px; */
+}
+#biography{
+    flex-grow: 3;
+}
+#contact {
+    flex-shrink: 1;
+}
+#profile-pic {
+    padding-top: 20px;
+    flex-shrink: 1;
+}
+#second-group {
+    height: 100%;
+    justify-content: space-evenly;
+    
+}
 }
